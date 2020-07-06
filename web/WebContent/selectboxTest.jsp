@@ -3,9 +3,9 @@
 <%@ page import = "java.sql.*" %>
 <%@ page import = "java.util.Arrays" %>
 <%!String driverName = "com.mysql.jdbc.Driver";%>
-<%!String url = "jdbc:mysql://localhost:3306/DB?useUnicode=true&characterEncoding=euc-kr";%>
+<%!String url = "jdbc:mysql://localhost:8509/DB?useUnicode=true&characterEncoding=euc-kr";%>
 <%!String user = "root";%>
-<%!String pwd = "0000";%>
+<%!String pwd = "rus7wp850!@vkt";%>
 <%!String Name = ""; %>
 
 <%

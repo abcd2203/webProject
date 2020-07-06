@@ -20,7 +20,7 @@ Connection con = null;
 PreparedStatement ps = null;
 %>
 
-<!doctype html>
+<!Doctype html>
 
 <html>
 

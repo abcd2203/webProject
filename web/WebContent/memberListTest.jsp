@@ -47,9 +47,9 @@
         //01단계 :드라이버 로딩 끝
         try {
             //02단계 :DB연결(Connection)시작
-            String jdbcDriver = "jdbc:mysql://localhost:3306/DB?useUnicode=true&characterEncoding=euckr";
+            String jdbcDriver = "jdbc:mysql://localhost:8509/DB?useUnicode=true&characterEncoding=euckr";
             String dbUser = "root";
-            String dbPass = "0000";
+            String dbPass = "rus7wp850!@vkt";
             // DB연결후 리턴값을 받는다.
             conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
             //02단계 :DB연결(Connection)끝
