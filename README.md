@@ -6,3 +6,6 @@
 <br><br>
 깃허브 연동은 20.7.6
 <br>프로젝트 마감 기한인 11월 중순 까지 변경사항 관리 예정
+<br><br>
+iptime 공유기 DDNS 기능을 사용하여 외부 접속 가능<br>
+namweb.iptime.org:8080/test
