@@ -9,5 +9,5 @@
 <br><br>
 iptime 공유기 DDNS 기능을 사용하여 외부 접속 가능<br>
 http://namweb.iptime.org:8080/test <br><br>
-ID : root
-Password :
+ID : root <br>
+Password : admin123
