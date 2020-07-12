@@ -30,8 +30,8 @@ public class MemberDAO {
 
 		try {
 
-			String dbURL = "jdbc:mysql://namweb.iptime.org:8509/DB?useUnicode=true&characterEncoding=euc-kr";
-			//String dbURL = "jdbc:mysql://localhost:8509/DB?useUnicode=true&characterEncoding=euc-kr";
+			// String dbURL = "jdbc:mysql://namweb.iptime.org:8509/DB?useUnicode=true&characterEncoding=euc-kr";
+			String dbURL = "jdbc:mysql://localhost:8509/DB?useUnicode=true&characterEncoding=euc-kr";
 
 			String dbID = "root";
 
@@ -85,8 +85,8 @@ public class MemberDAO {
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
 				Member member = new Member();
-				member.setMemberName(rs.getString(2));
-				member.setMemberId(rs.getString(1));
+				member.setMemberName(rs.getString(1));
+				member.setMemberId(rs.getString(2));
 				member.setMemberPwd(rs.getString(3));
 				member.setMemberAddress(rs.getString(4));
 				member.setMemberAge(rs.getInt(5));
@@ -101,7 +101,7 @@ public class MemberDAO {
 	}
 	
 	public int register(Member member) {
-		String SQL = "INSERT INTO member VALUES (?,?,?,?,?,?)";
+		String SQL = "INSERT INTO member(name,id,pwd,address,age,sex) VALUES (?,?,?,?,?,?)";
 		try {
 			pstmt = conn.prepareStatement(SQL);
 			pstmt.setString(1, member.getMemberName());

@@ -31,7 +31,7 @@ public class UserDAO {
 
 		try {
 
-			String dbURL = "jdbc:mysql://namweb.iptime.org:8509/DB?useUnicode=true&characterEncoding=euc-kr";
+			String dbURL = "jdbc:mysql://localhost:8509/DB?useUnicode=true&characterEncoding=euc-kr";
 
 			String dbID = "root";
 

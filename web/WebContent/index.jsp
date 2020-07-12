@@ -156,7 +156,7 @@ select::-ms-expand {
 <%
 	} else { 
 %>
-						<a class="dropdown-item" href="memberList.jsp">회원관리</a>
+						<a class="dropdown-item" href="table.jsp">회원관리</a>
 						<a class="dropdown-item" href="userLogout.jsp">로그아웃</a>
 						
 <%
