@@ -15,7 +15,7 @@
 			searchrequest.open("Post","./MemberSearchServlet?memberName=" + encodeURIComponent(document.getElementById("memberName").value), true);
 			searchrequest.onreadystatechange = searchProcess;
 			searchrequest.send(null);
-		}
+		} 
 		function searchProcess(){
 			var table = document.getElementById("ajaxTable");
 			table.innerHTML = "";

@@ -1,7 +1,7 @@
 package member;
-
+// ¸â¹ö
 public class Member {
-
+ 
 	private String memberName;
 
 	private String memberId;
