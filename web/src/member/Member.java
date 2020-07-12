@@ -1,5 +1,5 @@
 package member;
-// ¸â¹ö
+// ¸â¹ö Å¬·¡½º Ãß°¡
 public class Member {
  
 	private String memberName;

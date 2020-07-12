@@ -30,7 +30,7 @@
 					}
 				}
 			}
-		}
+		} 
 		function registerFunction() {
 			registerRequest.open("Post","./MemberRegisterServlet?memberName=" + encodeURIComponent(document.getElementById("registerName").value)+
 										"&memberId=" + encodeURIComponent(document.getElementById("registerId").value) +
