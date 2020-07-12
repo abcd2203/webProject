@@ -3,7 +3,7 @@
 <%@ page import = "java.sql.*" %>
 <%@ page import = "java.util.Arrays" %>
 <%!String driverName = "com.mysql.jdbc.Driver";%>
-<%!String url = "jdbc:mysql://localhost:8509/DB?useUnicode=true&characterEncoding=euc-kr";%>
+<%!String url = "jdbc:mysql://namweb.iptime.org:8509/DB?useUnicode=true&characterEncoding=euc-kr";%>
 <%!String user = "root";%>
 <%!String pwd = "rus7wp850!@vkt";%>
 <%!String Name = ""; %>

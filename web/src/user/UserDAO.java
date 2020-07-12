@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 
 
@@ -19,6 +20,8 @@ public class UserDAO {
 
 
 	private Connection conn;
+	
+	private PreparedStatement pstmt;
 
 	private ResultSet rs;
 
@@ -28,7 +31,7 @@ public class UserDAO {
 
 		try {
 
-			String dbURL = "jdbc:mysql://localhost:8509/DB?useUnicode=true&characterEncoding=euc-kr";
+			String dbURL = "jdbc:mysql://namweb.iptime.org:8509/DB?useUnicode=true&characterEncoding=euc-kr";
 
 			String dbID = "root";
 
@@ -44,6 +47,28 @@ public class UserDAO {
 
 		}
 
+	}
+	
+	public ArrayList<User> search(String userName) {
+		String SQL = "SELECT * FROM USER WHERE userName LIKE ?";
+		ArrayList<User> userList = new ArrayList<User>(); 
+		try {
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setString(1, "%" + userName + "%");
+			rs = pstmt.executeQuery();
+			while (rs.next()) {
+				User user = new User();
+				user.setUserName(rs.getString(1));
+				user.setUserAge(rs.getInt(2));
+				user.setUserGender(rs.getString(3));
+				user.setUserEmail(rs.getString(4));
+				userList.add(user);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return userList;
 	}
 
 	
@@ -199,6 +224,7 @@ public class UserDAO {
 		return false; // 이메일 등록 설정 실패
 
 	}
+	
 
 
 }

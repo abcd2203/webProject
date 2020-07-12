@@ -2,7 +2,7 @@
 <%@ page import="java.io.PrintWriter"%>
 
 <%@ page import="user.UserDAO"%>
-<%@ page import="member.memberDAO" %>
+<%@ page import="member.MemberDAO" %>
 <%@ page import = "java.sql.*" %>
 
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
